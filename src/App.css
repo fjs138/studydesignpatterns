@@ -8,6 +8,10 @@
   src: url(./fonts/BebasNeue-Regular.ttf);
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+}
 
 .animate.pop {
   animation-name: animate-pop;
@@ -87,4 +91,7 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.montserrat{  font-family: Montserrat, sans-serif;
 }
