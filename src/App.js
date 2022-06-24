@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import FlashcardTable from "./components/FlashcardTable";
+import {  useState } from "react";
+import { creationalFlashcardArray } from "./flashcard-datasets/creational";
+import { structuralFlashcardArray } from "./flashcard-datasets/structural";
+import { behavioralFlashcardArray } from "./flashcard-datasets/behavioral";
 
-function App() {
+export default function App() {
+  const [flashcardArray, setFlashcardArray] = useState(
+    creationalFlashcardArray
+  );
+
+  let designPatternCategories = ["Creational", "Structural", "Behavioral"];
+
+  const [designPatternCategorySelection, setDesignPatternCategorySelection] =
+    useState("Creational");
+
+  function handler(e) {
+    if (e.target.value === "Creational") {
+      setFlashcardArray(creationalFlashcardArray);
+    }
+    if (e.target.value === "Structural") {
+      setFlashcardArray(structuralFlashcardArray);
+    }
+    if (e.target.value === "Behavioral") {
+      setFlashcardArray(behavioralFlashcardArray);
+    }
+    setDesignPatternCategorySelection(e.target.value);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Study Design Patterns</h1>
+        <p>Thank you, GoF!</p>
       </header>
+
+      <select value={designPatternCategorySelection} onChange={handler}>
+        {designPatternCategories.map((e) => (
+          <option key={e.valueOf()}>{e}</option>
+        ))}
+      </select>
+      <FlashcardTable flashcardArray={flashcardArray} />
     </div>
   );
 }
-
-export default App;
