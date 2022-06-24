@@ -21,8 +21,8 @@
   grid-gap: 1rem;
   display: grid;
   align-items: center;
-  /*grid-template-columns: repeat(2, 50%);*/
-  grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+  grid-template-columns: repeat(2, 50%);
+  /*grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));*/
   gap: 1rem;
   padding: 5%;
 }
