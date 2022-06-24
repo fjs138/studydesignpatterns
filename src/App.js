@@ -1,6 +1,6 @@
 import "./App.css";
 import FlashcardTable from "./components/FlashcardTable";
-import {  useState } from "react";
+import { useState } from "react";
 import { creationalFlashcardArray } from "./flashcard-datasets/creational";
 import { structuralFlashcardArray } from "./flashcard-datasets/structural";
 import { behavioralFlashcardArray } from "./flashcard-datasets/behavioral";

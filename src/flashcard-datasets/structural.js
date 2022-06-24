@@ -29,5 +29,9 @@ export const structuralFlashcardArray = [
     front: "Flyweight",
     back: "Shares common parts of state between multiple objects",
   },
-  { id: 7, front: "Proxy", back: 'Controls and manages access to an original object' },
+  {
+    id: 7,
+    front: "Proxy",
+    back: "Controls and manages access to an original object",
+  },
 ];
