@@ -1,7 +1,8 @@
 
 
 # StudyDesignPatterns.com
-Dashboard for crypto news, calculator, built with React and data from API's.
+Design patterns are an important part of software development, and now there is a free, minimalist flashcard resource to study them online!
+
 ## Deployment
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f4bbc51d-7c8c-4638-aba7-d56e11ea3181/deploy-status)](https://app.netlify.com/sites/studydesignpatterns/deploys)
 
@@ -9,8 +10,7 @@ https://studydesignpatterns.com
 
 
 ## The Goal
-I wanted a way to quickly check the value of Bitcoin, Peloton, and Zoom, from a single view, without any authentication or credential requirements.
-
+I wanted to create a free minimalist resource for studying design patterns, that uses a flashcard format.
 
 ## Technology Stack
 
@@ -18,23 +18,22 @@ I wanted a way to quickly check the value of Bitcoin, Peloton, and Zoom, from a 
 | :------------------|:-------------------| :----------------	|
 | HTML, CSS, JS 			| Languages     | 				  |
 | React	| Front-end			  |	JavaScript library for building user interfaces            |
-|Axios|	http client|	A library for server communications; Axios is a Promise-based HTTP client that works in both browsers and Node.|
-|dotenv| obfuscate credentials| Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env.|
 
 ## Project Specifications
-* Display a calculator for converting US dollars and crypto
-* Display a crypto news widget
-* Display pertinent stock prices 
+* Display each design pattern as a flash card
+* Provide a menu to select a flashcard dataset/category
+* Make it minimalist, i.e. nothing unnecessary
 
 ## Anatomy of Project
 
 
 | File/Folder    	| Purpose           	  |
 | :------------------|:-------------------|
-| src/components/CurrencyConverter.js		 			| Currency converter component|
-| src/components/ExchangeRate.js		 			| Exchange rate component    |
-| src/components/Feed.js	 			| Crypto news component     |
-| src/components/Ticker.js| Stock ticker component     |
+| src/components/FlashcardCard.js		 			| Individual Flashcard|
+| src/components/FlashcardTable.js		 			| Table flashcards lay upon    |
+| src/components/Footer.js	 			| Footer     |
+| src/components/flashcard-datasets| Flashcard data sets in object format     |
+| src/components/fonts| Typograpgy     |
 
 
 
