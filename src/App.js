@@ -4,7 +4,7 @@ import { useState } from "react";
 import { creationalFlashcardArray } from "./flashcard-datasets/creational";
 import { structuralFlashcardArray } from "./flashcard-datasets/structural";
 import { behavioralFlashcardArray } from "./flashcard-datasets/behavioral";
-import Footer from './components/Footer';
+import Footer from "./components/Footer";
 
 export default function App() {
   const [flashcardArray, setFlashcardArray] = useState(
@@ -36,14 +36,17 @@ export default function App() {
         {/*<p>Thank you, GoF!</p>*/}
       </header>
 
-
-      <select className="minimal" value={designPatternCategorySelection} onChange={handler}>
+      <select
+        className="minimal"
+        value={designPatternCategorySelection}
+        onChange={handler}
+      >
         {designPatternCategories.map((e) => (
           <option key={e.valueOf()}>{e}</option>
         ))}
       </select>
       <FlashcardTable flashcardArray={flashcardArray} />
-      <Footer/>
+      <Footer />
     </div>
   );
 }

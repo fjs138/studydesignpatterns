@@ -5,7 +5,10 @@ export default function FlashcardTable({ flashcardArray }) {
     <div className="flashcardTable">
       {flashcardArray.map((flashcardCard) => {
         return (
-          <FlashcardCard flashcardCard={flashcardCard} key={flashcardCard.front} />
+          <FlashcardCard
+            flashcardCard={flashcardCard}
+            key={flashcardCard.front}
+          />
         );
       })}
     </div>
