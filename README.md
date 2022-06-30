@@ -21,7 +21,7 @@ I wanted to create a free minimalist resource for studying design patterns, that
 
 ## Project Specifications
 * Display each design pattern as a flash card
-* Provide a menu to select a flashcard dataset/category
+* Provide a menu to select a flashcard data set/category
 * Make it minimalist, i.e. nothing unnecessary
 
 ## Anatomy of Project
@@ -33,7 +33,7 @@ I wanted to create a free minimalist resource for studying design patterns, that
 | src/components/FlashcardTable.js		 			| Table flashcards lay upon    |
 | src/components/Footer.js	 			| Footer     |
 | src/components/flashcard-datasets| Flashcard data sets in object format     |
-| src/components/fonts| Typograpgy     |
+| src/components/fonts| Typography     |
 
 
 
