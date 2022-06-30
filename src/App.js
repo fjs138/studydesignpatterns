@@ -33,7 +33,7 @@ export default function App() {
     <div className="App">
       <header className="App-header">
         <h1 className="montserrat">Study Design Patterns</h1>
-        <p>Thank you, GoF!</p>
+        {/*<p>Thank you, GoF!</p>*/}
       </header>
 
 
